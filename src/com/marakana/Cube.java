@@ -74,7 +74,7 @@ class Cube {
                             mIndexBuffer);
                 
             gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
-            gl.glDisableClientState(GL10.GL_COLOR_ARRAY);
+            gl.glDisableClientState(GL10.GL_COLOR_ARRAY); 
     }
 }
 

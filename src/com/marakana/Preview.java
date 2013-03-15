@@ -23,7 +23,7 @@ class Preview extends SurfaceView implements SurfaceHolder.Callback { // <1>
     // underlying surface is created and destroyed.
     mHolder = getHolder();  // <4>
     mHolder.addCallback(this);  // <5>
-    mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS); // <6>
+    //mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS); // <6>
   }
 
   // Called once the holder is ready

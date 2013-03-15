@@ -3,7 +3,12 @@ package com.marakana;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.opengl.GLSurfaceView.Renderer;
+import android.opengl.GLUtils;
 
 public class GLClearRenderer implements Renderer {
 	
@@ -13,8 +18,7 @@ public class GLClearRenderer implements Renderer {
 	        float c = 1.0f / 256 * ( System.currentTimeMillis() % 256 );
 	        //gl.glClearColor( c, c, c, 0.5f );
 	        gl.glClearColor( 1.0f, 0.0f, 1.0f, 0.5f );
-	        gl.glClear( GL10.GL_COLOR_BUFFER_BIT );
-	        
+	        gl.glClear( GL10.GL_COLOR_BUFFER_BIT ); 
 	    }
 	 
 	    public void onSurfaceChanged( GL10 gl, int width, int height ) {
@@ -25,5 +29,5 @@ public class GLClearRenderer implements Renderer {
 	 
 	    public void onSurfaceCreated( GL10 gl, EGLConfig config ) {
 	        // No need to do anything here.
-	    }
+	    } 
 	}
